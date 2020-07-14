@@ -1,9 +1,14 @@
-export const ADD_TO_CART = 'ADD_TO_CART';
+export const ADD_TO_CART_REQUEST = 'ADD_TO_CART_REQUEST';
+export const ADD_TO_CART_SUCCESS = 'ADD_TO_CART_SUCCESS';
 export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
 export const UPDATE_AMOUNT = 'UPDATE_AMOUNT';
 
-export function addToCart(product) {
-  return { type: ADD_TO_CART, product };
+export function addToCartRequest(id) {
+  return { type: ADD_TO_CART_REQUEST, id };
+}
+
+export function addToCartSuccess(product) {
+  return { type: ADD_TO_CART_SUCCESS, product };
 }
 
 export function removeFromCart(id) {
