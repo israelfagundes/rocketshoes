@@ -22,7 +22,7 @@ export const Container = styled.div`
       text-transform: uppercase;
       transition: background 0.2s;
 
-      a:hover {
+      &:hover {
         background: ${darken(0.05, '#7159c1')};
       }
     }
@@ -91,5 +91,31 @@ export const Total = styled.div`
   strong {
     font-size: 28px;
     margin-left: 5px;
+  }
+`;
+
+export const EmptyCart = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+
+  > h1 {
+    color: #999;
+  }
+
+  button {
+    background: #7159c1;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.2s;
+
+    a:hover {
+      background: ${darken(0.05, '#7159c1')};
+    }
   }
 `;
