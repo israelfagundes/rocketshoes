@@ -99,6 +99,7 @@ export const EmptyCart = styled.div`
   justify-content: center;
   align-items: center;
   padding: 40px 0;
+  margin-top: 70px;
 
   > h1 {
     color: #999;
